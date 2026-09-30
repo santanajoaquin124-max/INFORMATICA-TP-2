@@ -120,3 +120,5 @@ Las fuentes de los datos están indicadas en la hoja "Fuentes" de cada Excel:
 ## 11. Conclusión
 
 El análisis muestra que, entre 2021 y 2025, React consolidó su liderazgo en Front End, Svelte creció y Angular, Vue.js y AngularJS perdieron participación. En IA, el uso entre desarrolladores creció con fuerza entre 2023 y 2025, y en 2026 el uso de agentes se acercó a duplicarse, aunque la confianza en los resultados bajó. Esto coincide con la conclusión del documento de base: la IA se encarga de tareas repetitivas y el rol del desarrollador se orienta hacia la arquitectura, la seguridad, la lógica de negocio y la experiencia de usuario.
+
+adjunto link [[archivo](https://claude.ai/share/f7197108-7eae-44d9-bccf-70ac37e6d7d1)]
