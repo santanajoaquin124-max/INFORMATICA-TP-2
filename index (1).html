@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Desarrollo web e IA 2021–2026: resultados</title>
+<meta name="description" content="Frameworks front end, runtimes back end y adopción de IA entre desarrolladores: tablas, gráficos y conclusiones.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
+<style>
+:root{--bg:#F6F8FA;--ink:#16202E;--mut:#5B6776;--line:#D6DEE6;--card:#fff;--acc:#0B5CAD;--soft:#E8F0F9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0}
+a{color:var(--acc)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+nav{position:sticky;top:0;z-index:5;background:rgba(246,248,250,.96);border-bottom:1px solid var(--line);overflow-x:auto}
+nav ol{display:flex;gap:4px;margin:0 auto;padding:8px 16px;list-style:none;max-width:980px;white-space:nowrap}
+nav a{display:block;padding:4px 10px;border-radius:6px;text-decoration:none;color:var(--mut);font-size:14px}
+nav a:hover{background:var(--soft);color:var(--ink)}
+main,header,footer{max-width:980px;margin:0 auto;padding:0 16px}
+header{padding-top:56px;padding-bottom:24px}
+h1{font-size:clamp(30px,5vw,46px);max-width:18em}
+.lede{font-size:19px;color:var(--mut);max-width:40em;margin:16px 0 0}
+.finds{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:28px}
+.finds p{margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:15px}
+.finds b{display:block;font:700 26px Georgia,serif;color:var(--acc)}
+section{padding:48px 0 8px;border-top:1px solid var(--line);margin-top:40px}
+.lvl{font-size:14px;color:var(--mut);margin:0 0 6px}
+h2{font-size:clamp(24px,3.5vw,32px)}
+h3{font-size:18px;margin:28px 0 8px}
+.sub{color:var(--mut);max-width:46em;margin:8px 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-top:16px}
+.tools{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:6px}
+.tools small{color:var(--mut)}
+button{font:inherit;font-size:14px;padding:6px 12px;border:1px solid var(--acc);color:var(--acc);background:#fff;border-radius:6px;cursor:pointer}
+button[aria-pressed=true]{background:var(--acc);color:#fff}
+svg{width:100%;height:auto;display:block}
+svg text{font:12px system-ui,sans-serif;fill:var(--mut)}
+svg .lb{font-weight:600}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:520px}
+caption{text-align:left;font-weight:600;padding-bottom:6px}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:right}
+th:first-child,td:first-child{text-align:left}
+thead th{background:var(--soft);font-weight:600}
+td.l,th.l{text-align:left}
+.pos{color:#177245}.neg{color:#B42318}
+.concl{border-left:4px solid var(--acc);background:var(--soft);padding:12px 16px;border-radius:0 8px 8px 0;margin-top:16px}
+.concl p{margin:0 0 6px}.concl p:last-child{margin:0}
+.bars{display:grid;gap:8px}
+.bar{display:grid;grid-template-columns:minmax(120px,36%) 1fr 56px;gap:10px;align-items:center;font-size:14.5px}
+.bar i{display:block;height:16px;border-radius:3px;background:var(--c,var(--acc))}
+.bar span:last-child{text-align:right;font-weight:600}
+.trk{background:#EDF1F5;border-radius:3px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.cols .card{margin:0}
+.cols h3{margin-top:0}
+.note{font-size:13.5px;color:var(--mut)}
+footer{padding:32px 16px 56px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<nav aria-label="Secciones"><ol>
+<li><a href="#resumen">Resumen</a></li><li><a href="#panorama">1 Panorama</a></li><li><a href="#front">2 Front end</a></li><li><a href="#back">3 Back end</a></li><li><a href="#ia">4 IA</a></li><li><a href="#agentes">5 Agentes</a></li><li><a href="#cierre">6 Conclusión</a></li>
+</ol></nav>
+
+<header id="resumen">
+<h1>Herramientas de desarrollo web y el impacto de la IA, 2021–2026</h1>
+<p class="lede">Resultados del estudio: qué frameworks se usan, qué corre en el servidor y cómo la IA cambió la forma de trabajar. La página avanza de lo general a lo particular y de lo simple a lo complejo.</p>
+<div class="finds">
+<p><b>React 44,7 %</b>Framework front end más usado en 2025 y líder en los cinco años.</p>
+<p><b>Node.js 48,7 %</b>Más del doble que Next.js en el back end (2025).</p>
+<p><b>44 % → 79 %</b>Desarrolladores que usan IA hoy, 2023 a 2025.</p>
+<p><b>29 %</b>Confía en la precisión de la IA (2025), 11 p.p. menos que en 2024.</p>
+</div>
+</header>
+
+<main>
+<section id="panorama">
+<p class="lvl">Nivel 1 de 5 · Panorama general</p>
+<h2>Tres capas que cambiaron en cinco años</h2>
+<p class="sub">Antes de los números, el contexto: qué pasó en cada capa del desarrollo web.</p>
+<div class="cols" style="margin-top:16px">
+<div class="card"><h3>Front end</h3><p>Se pasó de las SPA en el cliente a arquitecturas híbridas (SSR, SSG, ISR, streaming) con Next.js, Nuxt 3, Remix y SvelteKit. Vite reemplazó a Webpack en desarrollo; Tailwind y el CSS nativo dominan los estilos, y TypeScript es requisito.</p></div>
+<div class="card"><h3>Back end</h3><p>Prioridad en baja latencia, eficiencia y entornos Serverless y Edge. Node.js suma TypeScript nativo; Bun y Deno compiten en velocidad. FastAPI, Go y Rust crecen, y Prisma, Drizzle y las bases vectoriales se integran al stack.</p></div>
+<div class="card"><h3>IA</h3><p>Dejó de ser experimental y es parte del flujo diario: autocompletado en el editor, generación de interfaces, agentes que resuelven tickets e integración de LLM y RAG en el back end.</p></div>
+</div>
+<div class="card scroll"><table>
+<caption>Categorías de herramientas de IA y su impacto</caption>
+<thead><tr><th class="l">Categoría</th><th class="l">Herramientas clave</th><th class="l">Impacto en el flujo de trabajo</th></tr></thead>
+<tbody>
+<tr><td class="l">Asistentes de código en el IDE</td><td class="l">GitHub Copilot, Cursor, Supermaven</td><td class="l">Autocompletado en tiempo real, boilerplate y refactorización en el editor.</td></tr>
+<tr><td class="l">Generación de interfaces</td><td class="l">v0.dev, Bolt.new, Claude Artifacts</td><td class="l">Componentes de UI a partir de prompts o maquetas.</td></tr>
+<tr><td class="l">Agentes back end / full stack</td><td class="l">Devin, Claude Code, Windsurf Agent</td><td class="l">Resolución autónoma de tickets, refactorización y pruebas unitarias.</td></tr>
+<tr><td class="l">Infraestructura y bases vectoriales</td><td class="l">LangChain, LlamaIndex, pgvector, Vercel AI SDK</td><td class="l">RAG y modelos LLM dentro de un back end tradicional.</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="front">
+<p class="lvl">Nivel 2 de 5 · Front end, 2021–2025</p>
+<h2>React lidera y Svelte es el que más crece</h2>
+<p class="sub">Porcentaje de todos los encuestados que usó cada framework en el último año (Stack Overflow Developer Survey).</p>
+<div class="card">
+<div class="tools"><small>Sobre la línea: valor real. Línea punteada: tendencia lineal.</small><button id="pf" aria-pressed="false">Ver proyección 2026–2027</button></div>
+<div id="cf"></div>
+</div>
+<div class="card scroll"><div id="tf1"></div></div>
+<div class="card scroll"><div id="tf2"></div></div>
+<div class="concl"><p><b>Conclusiones</b></p>
+<p>React fue el más usado todos los años y cerró 2025 en su máximo (44,7 %), tras una baja en 2024.</p>
+<p>Angular (−4,8 p.p.) y AngularJS (−4,3 p.p.) son los que más pierden; Vue baja levemente (−1,4 p.p.).</p>
+<p>Svelte pasó de 2,8 % a 7,2 %: multiplicó su uso por 2,6 y en 2025 empata con AngularJS.</p></div>
+</section>
+
+<section id="back">
+<p class="lvl">Nivel 3 de 5 · Back end, 2025</p>
+<h2>Node.js domina el servidor</h2>
+<p class="sub">Uso en 2025 según 49.009 respuestas. Es una sola foto: no hay serie histórica para esta capa.</p>
+<div class="card"><div class="bars" id="bb"></div></div>
+<div class="card scroll"><div id="tb"></div></div>
+<div class="concl"><p><b>Conclusiones</b></p>
+<p>Node.js (48,7 %) supera en 27,9 p.p. al segundo, Next.js (20,8 %), y Express queda casi empatado con este (19,9 %).</p>
+<p>Tres de las siete tecnologías son meta-frameworks (Next.js, Astro, Nuxt.js), coherente con el renderizado híbrido del front end.</p>
+<p>Deno y Nuxt.js empatan en 4,0 %; NestJS (6,7 %) es el framework back end nuevo con mayor uso.</p></div>
+</section>
+
+<section id="ia">
+<p class="lvl">Nivel 4 de 5 · Adopción de IA, 2023–2025</p>
+<h2>El uso de IA se disparó; la confianza cayó</h2>
+<p class="sub">Cuatro indicadores de la misma encuesta. Las series con menos de tres datos no se proyectan.</p>
+<div class="card">
+<div class="tools"><small>Las proyecciones se limitan al 100 %.</small><button id="pi" aria-pressed="false">Ver proyección 2026–2027</button></div>
+<div id="ci"></div>
+</div>
+<div class="card scroll"><div id="ti"></div></div>
+<div class="card scroll"><div id="ta"></div></div>
+<div class="concl"><p><b>Conclusiones</b></p>
+<p>El uso actual pasó de 44 % a 79 % (+35 p.p., 1,8 veces) y la intención de usar IA de 70 % a 84 %.</p>
+<p>La confianza en la precisión baja de alrededor de 40 % a 29 %, y el sentimiento favorable cae de 72,0 % a 59,7 % entre 2024 y 2025. En 2025 la brecha entre uso y confianza es de 50 p.p.</p>
+<p>La IA se usa cada vez más, pero se cree cada vez menos: se adopta por utilidad, no por convicción.</p></div>
+</section>
+
+<section id="agentes">
+<p class="lvl">Nivel 5 de 5 · Agentes y modelos, 2025–2026</p>
+<h2>Los agentes casi duplicaron su uso en un año</h2>
+<p class="sub">El detalle más reciente y complejo: qué logran los agentes, dónde fallan y qué modelos se usan.</p>
+<div class="cols" style="margin-top:16px">
+<div class="card"><h3>Uso de agentes</h3><div class="bars" id="b1"></div></div>
+<div class="card"><h3>Resultados entre usuarios de agentes (2025)</h3><div class="bars" id="b2"></div></div>
+<div class="card"><h3>Frustración (2025)</h3><div class="bars" id="b3"></div></div>
+<div class="card"><h3>Modelos usados (2025)</h3><div class="bars" id="b4"></div></div>
+</div>
+<div class="card scroll"><div id="tg"></div></div>
+<div class="concl"><p><b>Conclusiones</b></p>
+<p>El uso de agentes subió de 31 % (encuesta 2025) a 59 % (sondeo de abril 2026): +28 p.p., 1,9 veces. Son fuentes distintas, así que el salto es una señal de dirección, no una comparación exacta.</p>
+<p>Los usuarios de agentes ganan en productividad (69 %) y tiempo (70 %), pero solo 38 % ve mejor calidad de código.</p>
+<p>66 % se frustra con respuestas «casi correctas»: revisar sigue siendo trabajo humano. Los modelos GPT (81 %), Claude Sonnet (43 %) y Gemini Flash (35 %) suman más de 100 %, por lo que muchos usan varios.</p></div>
+</section>
+
+<section id="cierre">
+<h2>Conclusión general</h2>
+<div class="concl" style="margin-top:16px">
+<p>El front end se concentra en React con Svelte como alternativa ascendente; el back end gira en torno a Node.js; y la IA pasó de experimento a hábito, con agentes en expansión.</p>
+<p>El rol del desarrollador no fue reemplazado sino elevado: la IA absorbe lo repetitivo y deja al equipo la arquitectura, la seguridad, la lógica de negocio y la experiencia de usuario. La baja confianza indica que la revisión humana seguirá siendo clave.</p>
+</div>
+<h3>Fuentes y límites de los datos</h3>
+<ul class="note">
+<li>Front end: Stack Overflow Developer Surveys 2021–2025. Verificados 2023 y 2025; 2021, 2022 y 2024 provienen de recopilaciones públicas y conviene contrastarlos con las páginas oficiales antes de publicar.</li>
+<li>Back end 2025: resumen de la encuesta 2025 (49.009 respuestas). Deno figura como 4 % y Nuxt.js como 4,0 %.</li>
+<li>IA: encuestas 2023–2025. «Usa actualmente» 2025 es 79 % según el repaso de Stack Overflow Blog (30/09/2026); el resumen oficial indica 80 %. La confianza 2023 (≈40 %) es aproximada y el sentimiento 2023 no se publicó con cifra.</li>
+<li>Agentes: encuesta 2025 y sondeo de abril de 2026; los resultados entre usuarios de agentes provienen de coberturas de InfoWorld y ShiftMag.</li>
+<li>Proyecciones: extrapolación lineal simple por mínimos cuadrados, solo ilustrativa; no es un pronóstico.</li>
+</ul>
+</section>
+</main>
+<footer>Datos: Datos_Frontend_Backend_2021_2025.xlsx, Datos_IA_en_Desarrollo_2023_2026.xlsx y Herramientas_Frontend_Backend_IA_2021_2026.docx.</footer>
+
+<script>
+const P=v=>v==null?'—':(v*100).toFixed(1).replace('.',',')+' %';
+const D=v=>(v>0?'+':'')+v.toFixed(1).replace('.',',');
+const cls=v=>v>0?'pos':v<0?'neg':'';
+const tbl=(cap,h,rows,L=[0])=>{const k=i=>L.includes(i)?' class="l"':'';return `<table><caption>${cap}</caption><thead><tr>${h.map((x,i)=>`<th${k(i)}>${x}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map((c,i)=>`<td${k(i)}>${c}</td>`).join('')}</tr>`).join('')}</tbody></table>`};
+const bars=(id,rows,max,c)=>document.getElementById(id).innerHTML=rows.map(r=>`<div class="bar"><span>${r[0]}</span><span class="trk"><i style="width:${r[1]/max*100}%;--c:${r[2]||c||'var(--acc)'}"></i></span><span>${Math.round(r[1]*1000)/10} %</span></div>`).join('');
+function fit(v){const p=[];v.forEach((y,i)=>{if(y!=null)p.push([i,y])});const n=p.length,mx=p.reduce((a,q)=>a+q[0],0)/n,my=p.reduce((a,q)=>a+q[1],0)/n;const b=p.reduce((a,q)=>a+(q[0]-mx)*(q[1]-my),0)/p.reduce((a,q)=>a+(q[0]-mx)**2,0);return i=>Math.min(1,Math.max(0,my+b*(i-mx)))}
+function line(id,years,S,max,proj){
+ const ext=proj?2:0,xs=[...years];for(let k=1;k<=ext;k++)xs.push(years[years.length-1]+k);
+ const W=760,H=340,L=46,R=120,T=14,B=30,n=xs.length,X=i=>L+i*(W-L-R)/(n-1),Y=v=>T+(1-v/max)*(H-T-B),step=max>.6?.2:.1;
+ let g='';
+ for(let t=0;t<=max+1e-9;t+=step)g+=`<line x1="${L}" x2="${W-R}" y1="${Y(t)}" y2="${Y(t)}" stroke="#D6DEE6"/><text x="${L-8}" y="${Y(t)+4}" text-anchor="end">${Math.round(t*100)} %</text>`;
+ xs.forEach((y,i)=>g+=`<text x="${X(i)}" y="${H-8}" text-anchor="middle" ${i>=years.length?'font-style="italic"':''}>${y}${i>=years.length?'*':''}</text>`);
+ const pth=a=>{let d='',pen=0;a.forEach(p=>{if(!p){pen=0;return}d+=(pen?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1);pen=1});return d};
+ const labs=[];
+ S.forEach(s=>{
+  const v=s.v.concat(Array(ext).fill(null)),pts=v.map((y,i)=>y==null?null:[X(i),Y(y)]);
+  g+=`<path d="${pth(pts)}" fill="none" stroke="${s.c}" stroke-width="2.5"/>`;
+  v.forEach((y,i)=>{if(y!=null)g+=`<circle cx="${X(i)}" cy="${Y(y)}" r="3.5" fill="${s.c}"><title>${s.n} ${xs[i]}: ${P(y)}</title></circle>`});
+  let last=v.map((y,i)=>y==null?-1:i).reduce((a,b)=>Math.max(a,b)),lv=v[last],ly=Y(lv),lx=last;
+  if(proj&&s.f){const f=fit(s.v),li=last,p=[];p[li]=pts[li];for(let i=li+1;i<n;i++)p[i]=[X(i),Y(f(i))];g+=`<path d="${pth(p)}" fill="none" stroke="${s.c}" stroke-width="2" stroke-dasharray="6 5"/>`;lx=n-1;lv=f(n-1);ly=Y(lv)}
+  labs.push({y:ly,x:X(lx),t:`${s.n} ${P(lv)}`,c:s.c});
+ });
+ labs.sort((a,b)=>a.y-b.y).forEach((l,i,a)=>{if(i&&l.y<a[i-1].y+15)l.y=a[i-1].y+15;g+=`<text class="lb" x="${l.x+8}" y="${l.y+4}" style="fill:${l.c}">${l.t}</text>`});
+ document.getElementById(id).innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Gráfico de líneas de uso por año">${g}</svg>`+(proj?'<p class="note">* Extrapolación, no dato observado.</p>':'');
+}
+
+/* Front end */
+const Y1=[2021,2022,2023,2024,2025];
+const FE=[['React',[.4014,.4262,.4058,.395,.447],'#0E8A8C'],['Angular',[.2296,.2039,.1746,.171,.182],'#C2283F'],['Vue.js',[.1897,.1882,.1638,.154,.176],'#3E9B5F'],['AngularJS',[.1149,.0899,.0721,.068,.072],'#B7791F'],['Svelte',[.0275,.0458,.0662,.065,.072],'#D9531E']];
+const feS=FE.map(a=>({n:a[0],v:a[1],c:a[2],f:1}));
+const drawF=()=>line('cf',Y1,feS,.5,document.getElementById('pf').getAttribute('aria-pressed')=='true');
+drawF();
+document.getElementById('tf1').innerHTML=tbl('Uso por año (% de encuestados)',['Framework',...Y1],FE.map(a=>[a[0],...a[1].map(P)]));
+const rk=v=>1+FE.filter(a=>a[1][4]>v).length;
+document.getElementById('tf2').innerHTML=tbl('Análisis del período',['Framework','Uso 2021','Uso 2025','Cambio (p.p.)','Promedio','Máximo','Año del máximo','Ranking 2025'],FE.map(a=>{const v=a[1],d=(v[4]-v[0])*100,m=Math.max(...v);return[a[0],P(v[0]),P(v[4]),`<span class="${cls(d)}">${D(d)}</span>`,P(v.reduce((x,y)=>x+y)/5),P(m),Y1[v.indexOf(m)],rk(v[4])]}));
+
+/* Back end */
+const BE=[['Node.js','Runtime',.487],['Next.js','Meta-framework',.208],['Express','Framework back end',.199],['NestJS','Framework back end',.067],['Astro','Meta-framework',.045],['Nuxt.js','Meta-framework',.04],['Deno','Runtime',.04]];
+const bc={'Runtime':'#0B5CAD','Meta-framework':'#6B4FBB','Framework back end':'#0E8A8C'};
+bars('bb',BE.map(r=>[`${r[0]} <small class="note">${r[1]}</small>`,r[2],bc[r[1]]]),.5);
+document.getElementById('tb').innerHTML=tbl('Backend y runtimes, 2025',['Tecnología','Categoría','Uso 2025','Ranking','Diferencia vs. líder (p.p.)'],BE.map(r=>[r[0],r[1],P(r[2]),1+BE.filter(x=>x[2]>r[2]).length,r[2]==.487?'0,0':`<span class="neg">${D((r[2]-.487)*100)}</span>`]),[0,1]);
+
+/* IA */
+const Y2=[2023,2024,2025];
+const AI=[['Usa o planea usar',[.7,.76,.84],'#0B5CAD',1],['Usa IA actualmente',[.44,.62,.79],'#6B4FBB',1],['Confianza en la precisión',[.4,.4,.29],'#C2283F',1],['Sentimiento favorable',[null,.72,.597],'#B7791F',0]];
+const aiS=AI.map(a=>({n:a[0],v:a[1],c:a[2],f:a[3]}));
+const drawI=()=>line('ci',Y2,aiS,1,document.getElementById('pi').getAttribute('aria-pressed')=='true');
+drawI();
+document.getElementById('ti').innerHTML=tbl('Adopción de IA por año',['Indicador',...Y2],AI.map(a=>[a[0],...a[1].map(P)]));
+document.getElementById('ta').innerHTML=tbl('Análisis de la IA',['Indicador','Resultado','Cómo se calcula'],[
+['Crecimiento de uso actual 2023→2025','+35 p.p.','Uso 2025 menos 2023'],['Veces que creció el uso actual','1,8 veces','Uso 2025 ÷ uso 2023'],['Crecimiento de «usa o planea usar»','+14 p.p.','Adopción + intención, 2023→2025'],['Cambio en la confianza 2023→2025','−11 p.p.','2023 es aproximado'],['Brecha uso–confianza 2025','50 p.p.','Uso actual menos confianza'],['Caída del sentimiento favorable 2024→2025','−12,3 p.p.','Sentimiento 2025 menos 2024'],['Salto en uso de agentes 2025→abril 2026','+28 p.p.','Sondeo 2026 menos encuesta 2025'],['Veces que creció el uso de agentes','1,9 veces','Agentes 2026 ÷ agentes 2025']],[0,2]);
+
+/* Agentes y modelos */
+bars('b1',[['Usan agentes, 2025',.31],['Usan agentes, abril 2026',.59,'#6B4FBB'],['No los usan o solo herramientas simples, 2025',.52,'#8A96A5'],['No planean adoptarlos, 2025',.38,'#8A96A5']],1);
+bars('b2',[['Mejoró su productividad',.69,'#177245'],['Redujo el tiempo en tareas',.7,'#177245'],['Mejoró la calidad del código',.38,'#B7791F']],1);
+bars('b3',[['Respuestas «casi correctas» de la IA',.66,'#C2283F']],1);
+bars('b4',[['Modelos GPT de OpenAI',.81],['Claude Sonnet',.43],['Gemini Flash',.35]],1);
+document.getElementById('tg').innerHTML=tbl('Indicadores de agentes y modelos',['Indicador','Categoría','Valor','Período'],[
+['Desarrolladores que usan agentes de IA','Agentes',P(.31),'2025'],['Desarrolladores que usan agentes (sondeo de abril)','Agentes',P(.59),'Abril 2026'],['No usan agentes o se quedan en herramientas simples','Agentes',P(.52),'2025'],['No planean adoptar agentes','Agentes',P(.38),'2025'],['Usuarios de agentes: mejoraron su productividad','Agentes',P(.69),'2025'],['Usuarios de agentes: redujeron el tiempo en tareas','Agentes',P(.7),'2025'],['Usuarios de agentes: mejoraron la calidad del código','Agentes',P(.38),'2025'],['Frustración: respuestas «casi correctas»','Calidad',P(.66),'2025'],['Modelos GPT de OpenAI','Modelos',P(.81),'2025'],['Modelos Claude Sonnet','Modelos',P(.43),'2025'],['Modelos Gemini Flash','Modelos',P(.35),'2025']],[0,1,3]);
+
+/* Botones de proyección */
+[['pf',drawF],['pi',drawI]].forEach(([id,fn])=>{const b=document.getElementById(id);b.onclick=()=>{const on=b.getAttribute('aria-pressed')!='true';b.setAttribute('aria-pressed',on);b.textContent=on?'Ocultar proyección':'Ver proyección 2026–2027';fn()}});
+</script>
+</body>
+</html>
